@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+  /* COLOR *
+  /* Primary */
+  --my-blue: hsl(223, 87%, 63%);
+  
+  
+  /* Secondary */
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+
+  /* Neutral */
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+
+  /* ? FONTS */
+  --ff-libre-franklin: "Libre Franklin", sans-serif;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--ff-libre-franklin);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 15px;
+  margin-bottom: 25px;
+}
+
+.section-1 img {
+  width: 15%;
+  max-width: 80px;
+  margin: 25px 0;
+  margin-top: 75px;
+}
+
+.section-1 h1 {
+  width: 100%;
+  font-size: min(6vw, 4rem);
+  color: var(--gray);
+  font-weight: lighter;
+}
+
+.section-1 p {
+  font-size: min(3.5vw, 1.6rem);
+
+}
+
+.section-1 span {
+  color: black;
+  font-weight: 700;
+}
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 75%;
+  max-width: 450px;
+  margin-bottom: 60px;
+}
+
+.section-2 input {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid var(--pale-blue);
+  
+}
+.section-2 input::placeholder {
+  font-size: 1.2rem;
+  color: var(--pale-blue);
+}
+
+.section-2 button {
+  color: white;
+  background-color: var(--my-blue);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.section-3 img {
+  width: 85vw;
+  max-width: 450px;
+  margin-bottom: 70px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin: 30px 0;
+}
+
+footer div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+
+}
+
+footer img {
+  height: 30px;
+  color: var(--my-blue);
+}
+
+
+
+@media (min-width: 900px) {
+
+/* .section-1 img {
+  width: 80px;
+} */
+
+  .section-2 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section-2 input {
+    width: 68%;
+  }
+
+  .section-2 button {
+    width: 30%;
+  }
+
+  .section-3 img {
+    margin-bottom: 40px;
+  }
+
+}
