@@ -64,7 +64,6 @@ body {
 
 .section-1 p {
   font-size: min(3.5vw, 1.6rem);
-
 }
 
 .section-1 span {
@@ -75,17 +74,23 @@ body {
 .section-2 {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   row-gap: 10px;
   width: 75%;
+  height: 50px;
   max-width: 450px;
+  margin-top: 20px;
   margin-bottom: 60px;
 }
 
+
 .section-2 input {
+  width: 100%;
   padding: 10px 20px;
   border-radius: 20px;
   border: 1px solid var(--pale-blue);
-  
+  outline-color: var(--pale-blue);
 }
 .section-2 input::placeholder {
   font-size: 1.2rem;
@@ -93,6 +98,7 @@ body {
 }
 
 .section-2 button {
+  width: 100%;
   color: white;
   background-color: var(--my-blue);
   border: none;
